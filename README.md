@@ -1,2 +1,2 @@
 # Pokedex
-Pokedex website using Vanilla JS using PokeAPI (restful API)
+Pokedex website made using Vanilla JS and PokeAPI (restful API)
