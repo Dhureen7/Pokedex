@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pokemon_title"></title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="nav-item"><a href="index.html"><img src="resources/pokeball.png" alt="Pokeball"></a></div>
+            <div class="nav-item"><a href="gen.html?generation=gen1">Gen 1</a></div>
+            <div class="nav-item"><a href="gen.html?generation=gen2">Gen 2</a></div>
+            <div class="nav-item"><a href="gen.html?generation=gen3">Gen 3</a></div>
+            <div class="nav-item"><a href="gen.html?generation=gen4">Gen 4</a></div>
+            <div class="nav-item"><a href="gen.html?generation=gen5">Gen 5</a></div>
+            <div class="nav-item"><a href="gen.html?generation=gen6">Gen 6</a></div>
+            <div class="nav-item"><a href="gen.html?generation=gen7">Gen 7</a></div>
+            <div class="nav-item"><a href="gen.html?generation=gen8">Gen 8</a></div>
+            <div class="nav-item"><a href="gen.html?generation=gen9">Gen 9</a></div>
+            <div class="search-box nav-item">
+                <input type="text" id="searchInput" placeholder="Search using id or name">
+                <button type="submit" onclick="searchResult()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%">
+                        <path fill="none" d="M0 0h24v24H0z"/>
+                        <path fill="currentColor" d="M10 2a8 8 0 015.293 13.707l4 4-1.414 1.414-4-4A8 8 0 1110 2zm0 2a6 6 0 100 12 6 6 0 000-12z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="logo nav-item">
+                <img src="resources/pokemon_logo.png" alt="Pokemon Logo" style="height: 8vh;">
+            </div>
+        </div>
+    </header>
+
+    <div class="name-container" id="pokemon-name"></div>
+
+    <div class="content">
+        <div class="content-item left-half" id="hwi-cries">
+
+        </div>
+        <div class="content-item sprite" id="sprites">
+
+        </div>
+        <div class="content-item stats" id="graph">
+
+        </div>
+    </div>
+    <div class="random">
+        <a href="pokemon_info.html" class="button">Another random pokemon</a>
+    </div>
+    
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/poke_display.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generation 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="nav-item"><a href="index.html"><img src="resources/pokeball.png" alt="Pokeball"></a></div>
+            <div class="nav-item"><a href="#" onclick="changeGeneration('gen1')" id="gen1-link">Gen 1</a></div>
+            <div class="nav-item"><a href="#" onclick="changeGeneration('gen2')" id="gen2-link">Gen 2</a></div>
+            <div class="nav-item"><a href="#" onclick="changeGeneration('gen3')" id="gen3-link">Gen 3</a></div>
+            <div class="nav-item"><a href="#" onclick="changeGeneration('gen4')" id="gen4-link">Gen 4</a></div>
+            <div class="nav-item"><a href="#" onclick="changeGeneration('gen5')" id="gen5-link">Gen 5</a></div>
+            <div class="nav-item"><a href="#" onclick="changeGeneration('gen6')" id="gen6-link">Gen 6</a></div>
+            <div class="nav-item"><a href="#" onclick="changeGeneration('gen7')" id="gen7-link">Gen 7</a></div>
+            <div class="nav-item"><a href="#" onclick="changeGeneration('gen8')" id="gen8-link">Gen 8</a></div>
+            <div class="nav-item"><a href="#" onclick="changeGeneration('gen9')" id="gen9-link">Gen 9</a></div>
+            <div class="search-box nav-item">
+                <input type="text" id="searchInput" placeholder="Search using id or name">
+                <button type="submit" onclick="searchResult()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%">
+                        <path fill="none" d="M0 0h24v24H0z"/>
+                        <path fill="currentColor" d="M10 2a8 8 0 015.293 13.707l4 4-1.414 1.414-4-4A8 8 0 1110 2zm0 2a6 6 0 100 12 6 6 0 000-12z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="logo nav-item">
+                <img src="resources/pokemon_logo.png" alt="Pokemon Logo" style="height: 8vh;">
+            </div>
+        </div>
+    </header>
+
+    <div class="flex-container" id="c">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prev-button" onclick="prevPage()" disabled>Previous</button>
+        <p id="current-page">  </p>
+        <button id="next-button" onclick="nextPage()">Next</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/gen.js"></script>
+</body>
+</html>
